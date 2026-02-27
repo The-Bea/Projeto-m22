@@ -1,0 +1,52 @@
+@use '../variables';
+
+.infos-bar {
+    padding: 16px 24px;
+    background-color: variables.$textColor;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__infos {
+        display: flex;
+        gap: 80px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$secondaryTextColor;
+            padding: 5px;
+
+            b {
+                color: variables.$secondaryTextColor;
+                font-size: 18px;
+                display: block;
+                padding: 5px;
+            }
+        }   
+
+    }
+
+    @media (max-width: 784px) {
+        display: block;
+        
+
+        &__infos {
+            display: block;
+            
+        }
+
+        &__item {
+            margin-bottom: 24px;
+            padding: 5px;
+            justify-content: center;
+        }
+
+    }
+
+    @media (min-width: 784px) and (max-width: 1024px) {
+        &__infos {
+            gap: 26px;
+        }
+    }
+
+}

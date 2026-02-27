@@ -8,19 +8,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.scss">
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="Bolo de aniversário">
+            <img class="hero__logo" src="./images/bolo.webp" alt="Bolo de aniversário">
             <p class="hero__text">
-                Faltam exatamente 104d 12h 20m 10s
+                Faltam exatamente: <br>
+                <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização:</b>
+                        Allianz Parque<br>Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Ajuda de custo:</b>
+                        Sugestão de $50,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando:</b>
+                        14/08/2026 as 16hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
         </div>
     </header>
 
+    <section class="event event--convidados" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Convidados & Convites</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque numquam quis alias aliquid iure deleniti! Ex placeat, sunt exercitationem amet adipisci eos iste distinctio assumenda voluptatum suscipit commodi molestiae non?
+                </p>
+            </div>
+            <img class="event__image" src="./images/convidados.png" alt="Pessoas conversando">
+        </div>
+    </section>
+    <section class="event event--festa event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Sobre a festa</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque numquam quis alias aliquid iure deleniti! Ex placeat, sunt exercitationem amet adipisci eos iste distinctio assumenda voluptatum suscipit commodi molestiae non?
+                </p>
+            </div>
+            <img class="event__image" src="./images/festa.png" alt="Pessoas conversando">
+        </div>
+    </section>
+    <section class="event event--Regras">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Regras</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque numquam quis alias aliquid iure deleniti! Ex placeat, sunt exercitationem amet adipisci eos iste distinctio assumenda voluptatum suscipit commodi molestiae non?
+                </p>
+            </div>
+            <img class="event__image" src="./images/regras.png" alt="Pessoas conversando">
+        </div>
+    </section>
+    <section class="event event--Pontos-importantes event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Pontos importantes</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque numquam quis alias aliquid iure deleniti! Ex placeat, sunt exercitationem amet adipisci eos iste distinctio assumenda voluptatum suscipit commodi molestiae non?
+                </p>
+            </div>
+            <img class="event__image" src="./images/importante.png" alt="Pessoas conversando">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
